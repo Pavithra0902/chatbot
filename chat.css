@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('https://files.oaiusercontent.com/file-8bE4qPXLPF9DUkpWC2Du6P?se=2025-03-17T03%3A36%3A28Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D8667031c-53d4-466d-8a61-7d968d2c12e8.webp&sig=QSp6D1TQWSbuo5jKjVqeMahwvJO82RYbPTAex1iLLAM%3D'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+}
+
+/* Chat Button */
+.chatbot-btn {
+    padding: 12px 20px;
+    font-size: 18px;
+    background: #ff4081;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Chatbot Window */
+.chatbot {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+    height: 500px;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    cursor: grab;
+}
+
+/* Draggable Chatbot */
+.chatbot.dragging {
+    opacity: 0.8;
+    cursor: grabbing;
+}
+
+/* Chatbot Header */
+.chat-header {
+    background: #ff4081;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    cursor: move;
+}
+
+/* Chatbot Body */
+.chat-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    background: #f9f9f9;
+    font-size: 16px;
+}
+
+/* Chatbot Input Section */
+.chat-footer {
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+/* Input Field */
+.chat-footer input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Send Button */
+.chat-footer button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    border: none;
+    background: #ff4081;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}

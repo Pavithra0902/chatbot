@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.K. Matching Center - Chatbot</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <header>
+        <h1>M.K. Matching Center</h1>
+    </header>
+
+    <div class="container">
+        <button class="chatbot-btn" onclick="toggleChat()">Chat with Us</button>
+    </div>
+
+    <!-- Chatbot Box (Draggable) -->
+    <div class="chatbot" id="chatbot">
+        <div class="chat-header" id="chat-header">
+            Chatbot - M.K. Matching Center
+            <span onclick="toggleChat()" style="cursor: pointer;">❌</span>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <p><strong>Bot:</strong> Welcome to M.K. Matching Center! How can I assist you?</p>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
