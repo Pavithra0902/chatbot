@@ -4,12 +4,17 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-image: url('https://files.oaiusercontent.com/file-8bE4qPXLPF9DUkpWC2Du6P?se=2025-03-17T03%3A36%3A28Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D8667031c-53d4-466d-8a61-7d968d2c12e8.webp&sig=QSp6D1TQWSbuo5jKjVqeMahwvJO82RYbPTAex1iLLAM%3D'); /* Replace with your image */
+    background-image: url('chatpic.png'); /* If image is in the same folder */
+    /* OR if it's inside an images folder */
+    /* background-image: url('images/image.png'); */
+
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
 }
+
 
 /* Header */
 header {
@@ -48,13 +53,6 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
-    cursor: grab;
-}
-
-/* Draggable Chatbot */
-.chatbot.dragging {
-    opacity: 0.8;
-    cursor: grabbing;
 }
 
 /* Chatbot Header */
@@ -66,7 +64,6 @@ header {
     display: flex;
     justify-content: space-between;
     font-size: 18px;
-    cursor: move;
 }
 
 /* Chatbot Body */
